@@ -7,20 +7,15 @@ package homewatchserver;
 
 import static homewatchserver.HomeWatchLiveServer.my_port;
 import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
-import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Base64;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.zip.Deflater;
 import javax.imageio.ImageIO;
 import portMapper.MapPort;
 

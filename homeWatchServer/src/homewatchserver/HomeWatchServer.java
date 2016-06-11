@@ -5,8 +5,6 @@
 package homewatchserver;
 
 import Camera.WebCamera;
-import com.github.sarxos.webcam.Webcam;
-import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
@@ -128,8 +126,9 @@ public class HomeWatchServer extends Thread{
                 {
                     System.out.println("Updating public address...");
                     map = new MapPort();
-                    URL url = new URL("http://www.digitaljugaad.com/HomeWatch?ip="+MapPort.pubAdr+":"+port);
-                    //URL url = new URL("http://localhost:8080/ECloudWebService/HomeWatch?ip="+map.pubAdr);
+                    //you need to create your Http web server.
+                    //pass the public address and port number to the server via query strings.
+                    URL url = new URL("http://localhost:8080/ECloudWebService/HomeWatch?ip="+MapPort.pubAdr+":"+port);
                     System.out.println("Public address: "+MapPort.pubAdr);
                     URLConnection conn = url.openConnection();
                     //this will hit the url
