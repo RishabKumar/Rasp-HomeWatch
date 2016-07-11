@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/serverinfobox">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/serverAddressTxt"
+            android:layout_alignParentStart="false"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_border"
+            android:hint="Enter Server address for example www.abc.com/GetServerAddress"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Stream"
+            android:id="@+id/button"
+            android:layout_below="@+id/serverAddressTxt"
+            android:layout_centerHorizontal="true"
+            android:onClick="startStreaming"
+            android:background="@drawable/round_border_button"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FPS: 0"
+        android:id="@+id/fpsView"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="15dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoview"
+        android:layout_gravity="right"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/InfoView"
+        android:layout_weight=".5" />
+
+</LinearLayout>
