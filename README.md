@@ -32,7 +32,13 @@ Note: Android client supports Live video streaming whereas Live clicks can be ta
   6. If you have downloaded the android app then enter the public ip address (and port number) of the internet connection your server is working on. You will get a live streaming of the webcam.
   
   7. You are free to modify and add your own implementation for a remote webcam server. 
+
   
- I am yet to publish the android app however the server can still work with browser as client to capture image.
+## Setup a publically accessible service.
+
+Your cam-server needs to send and update the current public ip address. For this you have to have a web service deployed on a web server. You may use your domain and hosting to do so or you can find number of freely available websites where you can upload your service. Your service will have a 'Get' and 'Put' method. 'Get' method will return the current public ip address of your web-cam. The android application uses this 'Get' service to fetch the public ip address and start a socket based live streaming. 
+"Put" method saves the current public ip address of the web-cam. This service is used by the web cam server itself, it updates its new IP address via 'Put' service. 
+
+
 
 Documentation is incomplete at the moment.
