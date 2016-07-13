@@ -20,7 +20,7 @@ B. Client application.
   
 Note: Android client supports Live video streaming whereas Live clicks can be taken with Web-browser any time.
 
-#   Steps to setup server and test on client (browser/android app):
+##   Steps to setup server and test on client (browser/android app):
   1. Pull homeWatchServer.
   2. Set a convenient port number greater than 1000 in "HomeWatchServer" file, like 8085.
   3. Connect a configured webcam to the system. 
