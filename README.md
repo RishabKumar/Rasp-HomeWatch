@@ -40,7 +40,4 @@ Your cam-server needs to send and update the current public ip address. For this
 "Put" method saves the current public ip address of the web-cam. This service is used by the web cam server itself, it updates its new IP address via 'Put' service. 
 
 
-
-
-
-Documentation is incomplete at the moment.
+You can email me at devileatspie@gmail.com if you need more help. 
